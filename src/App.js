@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable no-unused-expressions */
+/* eslint-disable camelcase */
+import React, { lazy, useEffect } from "react";
+import {
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
+import {
+  TransitionScroll,
+  Header,
+  Footer,
+  Spinner,
+  ScrollToTop,
+} from "./components";
+import "react-toastify/dist/ReactToastify.css";
+import { Home } from "./screens/home/home";
+
+const Auth = lazy(() => import("./screens/auth/auth"));
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ScrollToTop />
+      <TransitionScroll />
+      <Spinner />
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/auth">
+          <Auth />
+        </Route>
+        <Redirect from="*" to="/404" />
+      </Switch>
+      <Footer />
+    </>
   );
 }
 

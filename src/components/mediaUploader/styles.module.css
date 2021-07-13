@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.mediaContainer {
+  width: 30%;
+  margin: 2px;
+  position: relative;
+}
+
+.media {
+  height: 150px;
+  width: 100%;
+  object-fit: fill;
+  max-height: 150px;
+  border-radius: 10px;
+  background-color: #555;
+}
+
+.otherMedia {
+  word-wrap: break-word;
+  padding: 40px 10px;
+}
+
+.remove {
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.imgRemove {
+  font-size: 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 5%;
+  right: 7%;
+  z-index: 40;
+}
+
+.icon {
+  background-color: #ea6d97;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.outerPhoto {
+  width: 100%;
+  margin: 2px;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .outerPhoto {
+    width: 100%;
+  }
+}

@@ -8,7 +8,6 @@ export * from "./controlledMediaUploader";
 export * from "./routes";
 export * from "./controlledCustomSelect";
 export * from "./form";
-export * from "./informationBox";
 export * from "./transitionScroll";
 export * from "./breadcrumps";
 export * from "./scrollToTop";

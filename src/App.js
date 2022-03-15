@@ -9,13 +9,11 @@ import {
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import {
-  TransitionScroll,
   Header,
   Footer,
   Spinner,
   ScrollToTop,
 } from "./components";
-import "react-toastify/dist/ReactToastify.css";
 import { Home } from "./screens/home/home";
 
 const Auth = lazy(() => import("./screens/auth/auth"));
@@ -26,7 +24,6 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <TransitionScroll />
       <Spinner />
       <Header />
       <Switch>

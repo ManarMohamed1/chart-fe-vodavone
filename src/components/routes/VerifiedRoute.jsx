@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
 import { useSelector } from "react-redux";
 import PropTypes from "prop-types";
-import { ProtectedRoute } from "./protectedRoute";
+import { ProtectedRoute } from "./ProtectedRoute";
 
 export const VerifiedRoute = ({ children, requiredType, ...rest }) => {
   const { type, customer, driver, company } = useSelector(({ userState }) => userState);

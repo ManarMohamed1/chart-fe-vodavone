@@ -42,7 +42,7 @@ export const CustomSelect = ({
     }),
     dropdownIndicator: (styles) => ({
       ...styles,
-      ...(type === "language" && { color: "white", ":hover": { color: "white" } }),
+      ...(type === "language" && { color: "#d2d2d2", ":hover": { color: "#d2d2d2" } }),
     }),
     menu: (styles) => ({
       ...styles,
@@ -53,7 +53,7 @@ export const CustomSelect = ({
     }),
     singleValue: (styles) => ({
       ...styles,
-      ...(type === "language" && { color: "white" }),
+      ...(type === "language" && { color: "#333" }),
     }),
 
     multiValue: (styles) => {
@@ -93,8 +93,8 @@ export const CustomSelect = ({
     borderRadius: 0,
     colors: {
       ...theme.colors,
-      primary25: "#edd1d1",
-      primary50: "#dba3a3",
+      primary25: "#eee",
+      primary50: "#e2e2e2",
       primary75: "#c97575",
       primary: "#b74747",
     },

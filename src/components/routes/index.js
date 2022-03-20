@@ -1,3 +1,3 @@
-export * from "./protectedRoute";
-export * from "./guestRoute";
-export * from "./verifiedRoute";
+export * from "./ProtectedRoute";
+export * from "./GuestRoute";
+export * from "./VerifiedRoute";

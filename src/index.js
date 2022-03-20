@@ -8,10 +8,9 @@ import reportWebVitals from './reportWebVitals';
 import { store, persistor } from "./redux/store";
 import { changeLang } from "./redux/actions";
 import { Spinner } from "./components";
+import { ThemeProvider } from './context/ThemeContext'
 import "./i18n/i18n";
-// import "react-datetime/css/react-datetime.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "@sweetalert2/theme-bootstrap-4/bootstrap-4.css";
 
 
 const localStorageData = localStorage["persist:root"];
@@ -25,11 +24,13 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <Suspense fallback={<Spinner isOpen />}>
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
-        </Suspense>
+        <ThemeProvider>
+          <Suspense fallback={<Spinner isOpen />}>
+            <BrowserRouter>
+              <App />
+            </BrowserRouter>
+          </Suspense>
+        </ThemeProvider>
       </PersistGate>
     </Provider>
   </React.StrictMode>,

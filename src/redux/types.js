@@ -12,3 +12,9 @@ export const CLEAR_SPINNER_STATUS = "CLEAR_SPINNER_STATUS";
 
 // Upload Progress
 export const SET_UPLOAD_PROGRESS = "SET_UPLOAD_PROGRESS";
+
+
+export const SET_COUNTRY = "SET_COUNTRY";
+export const SET_CAMP = "SET_CAMP";
+export const SET_SCHOOL = "SET_SCHOOL";
+export const SET_DATA = 'SET_DATA'

@@ -23,13 +23,13 @@ const toFormData = (data) => {
   return formData;
 };
 
-let apiUrl = `${baseUrl}/en/api`;
+let apiUrl = `${baseUrl}`;
 
 store.subscribe(() => {
   const state = store.getState();
   const { locale } = state.langState;
   const { token } = state.userState;
-  apiUrl = `${baseUrl}/${locale}/api`;
+  apiUrl = `${baseUrl}`;
 
   axios.defaults.baseURL = apiUrl;
   if (token) {

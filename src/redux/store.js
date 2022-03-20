@@ -8,7 +8,7 @@ import reducers from "./reducers";
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["langState", "userState"],
+  whitelist: ["langState", "searchOptionsState"],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers);

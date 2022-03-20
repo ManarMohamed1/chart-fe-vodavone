@@ -1,5 +1,5 @@
 /* eslint-disable no-case-declarations */
-import { UPDATE_SPINNER_STATUS, CLEAR_SPINNER_STATUS, SET_UPLOAD_PROGRESS } from "../types";
+import { UPDATE_SPINNER_STATUS, CLEAR_SPINNER_STATUS, SET_UPLOAD_PROGRESS, SET_COUNTRY, SET_CAMP, SET_SCHOOL } from "../types";
 
 const INITIAL_STATE = {
   spinnerStatus: {},

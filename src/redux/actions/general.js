@@ -12,3 +12,6 @@ export const setUploadProgress = (uploadProgress) => ({
   type: SET_UPLOAD_PROGRESS,
   uploadProgress,
 });
+
+
+

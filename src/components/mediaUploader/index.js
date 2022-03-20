@@ -1,2 +1,2 @@
-export * from "./mediaUploader";
-export * from "./filesPreview";
+export * from "./MediaUploader";
+export * from "./FilesPreview";

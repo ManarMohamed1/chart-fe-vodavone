@@ -4,7 +4,7 @@ import React from "react";
 import { Controller } from "react-hook-form";
 import { PropTypes } from "prop-types";
 import { useTranslation } from "react-i18next";
-import { CustomSelect } from "./customSelect";
+import { CustomSelect } from "./CustomSelect";
 
 export const ControlledCustomSelect = ({
   control,
